@@ -11,6 +11,10 @@ from matplotlib.path import Path
 import matplotlib.patches as patches
 
 def show_field(field1, field2):
+    '''
+    Plot 2 rectangles, given the
+    bottom left and top right co-ordinates of each.
+    '''
     
     def vertices(left, bottom, right, top):
         verts = [(left, bottom), (left, top), (right, top), (right, bottom), (left, bottom)]
@@ -32,6 +36,10 @@ def show_field(field1, field2):
 
 
 def overlap_area(field1, field2):
+    '''
+    Calculates the overlapping area between 2 rectangles, given the
+    bottom left and top right co-ordinates of each.
+    '''
     
     left1, bottom1, right1, top1 = field1
     left2, bottom2, right2, top2 = field2
