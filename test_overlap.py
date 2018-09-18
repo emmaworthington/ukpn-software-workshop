@@ -34,7 +34,7 @@ def test_corners_overlap():
 def test_inside_touch():
     '''
     Two fields, one inside the other,
-    touching on one side..
+    touching on one side.
     '''
     
     field1 = (1, 1, 4, 4)
